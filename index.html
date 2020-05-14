@@ -8,6 +8,11 @@
 </head>
 <body>
     <h1>Има плата?</h1>
-    <video controls autoplay src="./IMG_4442_Trim.mp4" />
+    <video controls="none" autoplay src="./IMG_4442_Trim.mp4" />
 </body>
+<script>
+    let video = document.querySelectorAll("video")[0]
+    
+    document.addEventListener("load", () => {video.autoplay}, false)
+</script>
 </html>
